@@ -1,0 +1,39 @@
+<!--pages/article_detail/article_detail.wxml-->
+<view class="container">
+  <view class="head">
+    <image src="{{img}}"></image>
+  </view>
+  <view class="title">
+    <view class="blu">
+    <view class="bt">标题：如果超出宽度隐藏，规范和更好的方法覆盖掉太多人太多太规范规定天方夜谭</view>
+    <view class="text">
+      <text>作者：admin</text>
+      <text>发布时间：2019-12-17</text>
+    </view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="bt">
+      <text>详情</text>
+    </view>
+    <text class="sj">文库萨达哈静安寺画江湖大家撒好几点开会撒娇带回家三口回到家萨克还来得及卡萨良好的健康撒活动即可撒活动即可撒活动即可撒哈拉大家看撒谎觉得还是多久啊</text>
+
+      <text class="sj"> 打开的快乐撒娇的空间撒快捷快递家肯德基卡死了觉得看撒娇的加快落地即可萨拉dj
+
+大家看撒娇的刻录机撒开了大家撒开了家都快死垃圾点开链接撒可富
+
+角度看撒垃圾的卡萨了解到喀什
+
+撒</text>
+
+       <text class="sj">文库萨达哈静安寺画江湖大家撒好几点开会撒娇带回家三口回到家萨克还来得及卡萨良好的健康撒活动即可撒活动即可撒活动即可撒哈拉大家看撒谎觉得还是多久啊</text>
+
+      <text class="sj">打开的快乐撒娇的空间撒快捷快递家肯德基卡死了觉得看撒娇的加快落地即可萨拉dj
+
+大家看撒娇的刻录机撒开了大家撒开了家都快死垃圾点开链接撒可富
+
+角度看撒垃圾的卡萨了解到喀什
+
+撒</text>
+  </view>
+</view>

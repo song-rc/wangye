@@ -1,0 +1,53 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+<!-- 轮播图 -->
+ <view class="swiper">
+  <swiper indicator-dots="true" circular="true" indicator-active-color="#fff" interval="3000" autoplay="true" duration="1000">
+    <block wx:for="{{swiper}}" wx:key="index">
+      <swiper-item>
+      <image src="{{item.url}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  </view>
+<!-- 选项栏 -->
+  <view class="select">
+    <view class="select_box {{seldata==index?'xhx':''}}" wx:for="{{select}}" wx:key="index" data-idx="{{index}}" bindtap="click">
+      <text>{{item.text}}</text>
+    </view>
+  </view>
+  <swiper bindchange="slide" current="{{seldata}}" class="sw" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+    <swiper-item>
+    <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}};">
+      <view class="xq_box" wx:for="{{xq}}" wx:key="index" bindtap="detail" data-current="{{index}}">
+        <view class="box_cnt">
+          <view class="cnt_left">
+            <view class="bcolor">
+            <image src="{{item.img}}"></image>
+            </view>
+          </view>
+          <view class="cnt_right">
+          <view class="h3">{{item.h3}}</view> 
+          <text>{{item.cnt}}</text> 
+          <view class="time">{{item.time}}</view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+    </swiper-item>
+    <swiper-item>
+    <scroll-view scroll-y="true" style="height: {{clientHeight?clientHeight+'px':'auto'}};" enable-flex="true">
+    <view class="wt">
+      <view class="xx_box" wx:for="{{xx}}" wx:key="index">
+        <view class="white">
+          <view class="gray">
+            <image src="{{item.image}}"></image>
+            <view class="bagr">{{item.text}}</view>
+          </view>
+        </view>
+      </view>
+      </view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>

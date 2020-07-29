@@ -1,0 +1,76 @@
+/* pages/pictures/pictures.wxss */
+.select{
+  position: fixed;
+  z-index: 1;
+  width:100%;
+  height:100rpx;
+  border: 1rpx solid #c9c3c3;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5rpx;
+}
+.select_box{
+  width:100%;
+  height:100rpx;
+  letter-spacing: 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight:550;
+}
+.select_box .xhx{
+  width:160rpx;
+  height:100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color:#30bffc;
+  border-bottom: 8rpx solid #30bffc;
+}
+.sw{
+  position:absolute;
+  top:120rpx;
+  width: 100%;
+  /* height:calc(100vh - 108rpx); */
+  /* border:1rpx solid #30bffc; */
+}
+.wt{
+  width:100%;
+  display: flex;
+  flex-flow: wrap;
+  align-content: flex-start;
+  /* border:1rpx solid #e8fc30; */
+  /* background-color: red; */
+}
+.xx_box{
+  width:45%;
+  margin:10rpx 15rpx;
+  /* border:1rpx solid black; */
+}
+.gray{
+  width:100%;
+  /* margin: 0 auto; */
+}
+.gray image{
+  width:100%;
+  border-radius: 30rpx;
+  border:10rpx solid gray; 
+}
+.tc{
+  position: fixed;
+  top:1rpx;
+  width:100%;
+  height:100%;
+  background-color: rgba(17, 17, 17, 0.74);
+}
+.tc swiper{
+  width:92%;
+  height:600rpx;
+  border:20rpx solid rgb(114, 93, 93);
+  border-radius: 30rpx;
+  margin:200rpx auto;
+}
+.xc image{
+  width: 100%;
+  height:100%;
+}

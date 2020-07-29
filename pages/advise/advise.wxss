@@ -1,0 +1,49 @@
+/* pages/advise/advise.wxss */
+page{
+  background-color: #ebe8e8;
+}
+.top{
+  padding:30rpx;
+  background-color: #fff;
+  margin-bottom:20rpx; 
+}
+.bt{
+  font-weight: 700;
+  letter-spacing:2rpx;
+  margin-bottom:30rpx;
+}
+.bt text{
+  color:red;
+}
+.radio{
+  width: 100%;
+  font-size: 30rpx;
+  display: flex;
+}
+.radio radio{
+  transform: scale(0.6);
+}
+textarea{
+  background-color: #f7f3f3;
+}
+textarea text{
+  position: relative;
+  right:-78%;
+  bottom:-80%;
+}
+.bottom{
+  background-color: #fff;
+  width:100%;
+  height:500rpx;
+}
+.userinfo{
+  margin-bottom: 150rpx;
+}
+.userinfo view{
+  width:96%;
+  height:100rpx;
+  border-bottom:1rpx solid #e4dede;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}

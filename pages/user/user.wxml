@@ -1,0 +1,54 @@
+<!--pages/user/user.wxml-->
+<view class="container">
+  <view class="userinfo" wx:if="{{!hidden}}">
+    <view>部分功能需授权后方可访问</view>
+    <button open-type="getUserInfo" bindgetuserinfo="getUserInfo">点击授权</button>
+    <button bindtap="click">返回首页</button>
+  </view>
+  <view class="content" wx:else>
+    <view class="head">
+      <view class="head-top">
+        <view class="tx">
+          <image src="{{userInfo.avatarUrl}}"></image>
+        </view>
+        <view>{{userInfo.nickName}}</view>
+      </view>
+ <!-- 联系方式 -->
+      <view class="head-bottom">
+        <view class="xx">
+          <view class="xx-box" wx:for="{{xxData}}" wx:key="index" data-idx="{{index}}" bindtap="select">
+            <image src="{{item.url}}"></image>
+            <text>{{item.text}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+<!-- 选项卡 -->
+    <view class="xxk">
+    <view class="xxk-top">
+      <view class="box" wx:for="{{xxktop}}" wx:key="index" data-idx="{{index}}" bindtap="top">
+        <view class="box-right">
+          <image src="{{item.url}}"></image>
+          <view class="box-r"><text>{{item.text}}</text></view>
+        </view>
+        <button><view class="{{item.bq}}"></view></button>
+      </view>
+    </view>
+    <view class="xxk-bottom">
+      <view class="box" wx:for="{{xxkbottom}}" wx:key="index" data-idx="{{index}}" bindtap="bottom">
+        <view class="box-right">
+          <image src="{{item.url}}"></image>
+          <view class="box-r"><text>{{item.text}}</text></view>
+        </view>
+        <button open-type="{{index==0?'contact':''}}" bindcontact="kfhh">
+          <view class="{{item.bq}}">
+          </view>
+          </button>
+      </view>
+    </view>
+  </view>
+  </view>
+</view>
+<cover-view wx:if="{{show}}" bindtap="yc">
+  <cover-image src="/images/zs.jpg"></cover-image>
+</cover-view>

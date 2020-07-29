@@ -1,0 +1,26 @@
+<!--pages/advise/advise.wxml-->
+<view class="container">
+      <form bindsubmit="fromsubmit">
+      <view class="top">
+          <view class="bt">请你描述你所遇到的问题<text>*</text></view>
+          <view class="radio">
+            <text>问题分类：</text>
+            <radio-group name="radio">
+              <label><radio value="卡顿"/>卡顿</label>
+              <label><radio value="加载慢"/>加载慢</label>
+              <label><radio value="异常"/>异常</label>
+            </radio-group>
+          </view>
+          <textarea placeholder="请输入您的宝贵意见,感谢您的反馈!" name="textarea" maxlength="200" bindinput="textarea">
+            <text>{{textareanum}}/200</text>
+          </textarea>
+      </view>
+      <view class="bottom">
+        <view class="userinfo">
+          <view>姓名*:<input placeholder="请输入你的姓名" name="name" value="{{name}}"></input></view>
+          <view>电话*:<input placeholder="请输入你的电话" name="phone" value="{{phone}}"></input></view>
+        </view>
+        <button form-type="submit">提交反馈</button>
+      </view>
+      </form>
+</view>

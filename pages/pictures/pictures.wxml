@@ -1,0 +1,31 @@
+ <!--pages/pictures/pictures.wxml-->
+<view class="container">
+  <view class="select">
+    <view class="select_box" wx:for="{{select}}" wx:key="index" data-idx="{{index}}" bindtap="click">
+      <text class="{{seldata==index?'xhx':''}}">{{item.text}}</text>
+    </view>
+  </view>
+  <swiper bindchange="slide" current="{{seldata}}" class="sw" style="height: {{clientHeight?clientHeight+'px':'auto'}}">
+    <swiper-item>
+    <scroll-view scroll-y="{{true}}" style="height: {{clientHeight?clientHeight+'px':'auto'}};" enable-flex="true">
+    <view class="wt">
+      <view class="xx_box" wx:for="{{xc}}" wx:key="index" bindtap="sf" data-xcidx="{{index}}">
+          <view class="gray">
+            <image src="{{item.img}}" mode="widthFix"></image>
+          </view>
+      </view>
+    </view>
+    </scroll-view>
+    </swiper-item>
+    <swiper-item>
+      222
+    </swiper-item>
+  </swiper>
+      <view class="tc" wx:if="{{!show}}" bindtap="sh">
+        <swiper class="xc" current="{{index}}" circular="true">
+          <swiper-item wx:for="{{xc}}" wx:key="index" data-count="{{index}}" >
+            <image src="{{item.img}}"></image>
+          </swiper-item>
+        </swiper>
+      </view>
+</view>
